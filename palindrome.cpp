@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <string>
 
@@ -19,15 +20,18 @@ int main() {
 	return 0;
 }
 #endif
+
 void cinFullString(std::string &s) {
 	getline(std::cin, s);
 }
+
 std::string removeSpaces(std::string s) {
 	for (int i = 0; i < s.length(); i++)
 		while (s[i] == ' ')
 			s.erase(i, 1);
 	return s;
 }
+
 std::string reverse(std::string s)
 {
 	std::string r = "";
@@ -37,6 +41,7 @@ std::string reverse(std::string s)
 
 	return r;
 }
+
 bool isPalindrome(std::string a) {
 	a = removeSpaces(a);
 	return reverse(a) == a;
