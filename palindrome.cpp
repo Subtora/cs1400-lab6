@@ -2,14 +2,13 @@
 #include <string>
 
 void cinFullString(std::string &s);
-void removeSpaces(std::string &s);
+std::string removeSpaces(std::string s);
 std::string reverse(std::string s);
 bool isPalindrome(std::string a);
 
 int main() {
 	std::string s;
 	cinFullString(s);
-	removeSpaces(s);
 
 	if (isPalindrome(s)) {
 		std::cout << "valid palindrome\n";
@@ -23,10 +22,11 @@ int main() {
 void cinFullString(std::string &s) {
 	getline(std::cin, s);
 }
-void removeSpaces(std::string &s) {
+std::string removeSpaces(std::string s) {
 	for (int i = 0; i < s.length(); i++)
 		while (s[i] == ' ')
 			s.erase(i, 1);
+	return s;
 }
 std::string reverse(std::string s)
 {
@@ -38,5 +38,6 @@ std::string reverse(std::string s)
 	return r;
 }
 bool isPalindrome(std::string a) {
+	a = removeSpaces(a);
 	return reverse(a) == a;
 }
