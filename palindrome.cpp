@@ -5,7 +5,7 @@ void cinFullString(std::string &s);
 std::string removeSpaces(std::string s);
 std::string reverse(std::string s);
 bool isPalindrome(std::string a);
-
+#if 0
 int main() {
 	std::string s;
 	cinFullString(s);
@@ -18,7 +18,7 @@ int main() {
 	std::cin.get();
 	return 0;
 }
-
+#endif
 void cinFullString(std::string &s) {
 	getline(std::cin, s);
 }
