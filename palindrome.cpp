@@ -3,13 +3,19 @@
 
 void cinFullString(std::string &s);
 void removeSpaces(std::string &s);
+std::string reverse(std::string s);
+bool isPalindrome(std::string a);
 
 int main() {
 	std::string s;
 	cinFullString(s);
 	removeSpaces(s);
 
-	std::cout << s << std::endl;
+	if (isPalindrome(s)) {
+		std::cout << "valid palindrome\n";
+	}
+	else std::cout << "invalid palindrome\n";
+
 	std::cin.get();
 	return 0;
 }
@@ -21,4 +27,16 @@ void removeSpaces(std::string &s) {
 	for (int i = 0; i < s.length(); i++)
 		while (s[i] == ' ')
 			s.erase(i, 1);
+}
+std::string reverse(std::string s)
+{
+	std::string r = "";
+
+	for (int i = 0; i < s.length(); i++)
+		r += s[s.length() - 1 - i];
+
+	return r;
+}
+bool isPalindrome(std::string a) {
+	return reverse(a) == a;
 }

@@ -1,1 +1,4 @@
-﻿  cs1400-lab6.vcxproj -> C:\Users\16tsm\Desktop\cs1400-lab6\Debug\cs1400-lab6.exe
+﻿  palindrome.cpp
+c:\users\16tsm\desktop\cs1400-lab6\cs1400-lab6\palindrome.cpp(27): warning C4018: '<': signed/unsigned mismatch
+c:\users\16tsm\desktop\cs1400-lab6\cs1400-lab6\palindrome.cpp(35): warning C4018: '<': signed/unsigned mismatch
+  cs1400-lab6.vcxproj -> C:\Users\16tsm\Desktop\cs1400-lab6\Debug\cs1400-lab6.exe
