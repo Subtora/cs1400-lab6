@@ -1,1 +1,1 @@
-cd ../mnt/c/Users/16tsm/Desktop
+cd ../mnt/c/Users/16tsm/Desktop/cs1400-lab6
