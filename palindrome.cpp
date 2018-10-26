@@ -6,6 +6,7 @@ void cinFullString(std::string &s);
 std::string removeSpaces(std::string s);
 std::string reverse(std::string s);
 bool isPalindrome(std::string a);
+
 #if 0
 int main() {
 	std::string s;
