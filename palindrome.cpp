@@ -1,11 +1,12 @@
-
 #include <iostream>
 #include <string>
+
 
 void cinFullString(std::string &s);
 std::string removeSpaces(std::string s);
 std::string reverse(std::string s);
 bool isPalindrome(std::string a);
+
 
 int main() {
 	std::string s;
@@ -16,7 +17,6 @@ int main() {
 	}
 	else std::cout << "invalid palindrome\n";
 
-	std::cin.get();
 	return 0;
 }
 
