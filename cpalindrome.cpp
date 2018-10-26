@@ -1,6 +1,5 @@
 #include <iostream>
-void reverse(char* s);
-
+#include <string.h>
 int main(int argc, char* argv[]) {
 
 	char str[1000] = "";
@@ -9,23 +8,19 @@ int main(int argc, char* argv[]) {
 		strcat_s(str, 1000, argv[i]);
 		strcat_s(temp, 1000, argv[i]);
 	}
-	reverse(temp);
+	
+	std::size_t len = std::strlen(str);
+	for (std::size_t i = 0; i != len / 2; ++i) {
+		char temp = str[i];
+		str[len - i - 1] = temp;
+	}
 
-	if (temp[] == str[]) {
+	if (strcmp(temp, str) == 0) {
 			std::cout << "vaild palindrome";
 	}
 	else { std::cout << "invalid palindrome"; 
 	}
 
-	std::cin.get();
+	//std::cin.get();
 	return 0;
-}
-void reverse(char* s)
-{
-	for (size_t i = 0; i < strlen(s) / 2; i++)
-	{
-		char	temp = s[i];
-		s[i] = s[strlen(s) - 1 - i];
-		s[strlen(s) - 1 - i] = temp;
-	}
 }
